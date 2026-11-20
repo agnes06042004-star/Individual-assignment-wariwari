@@ -1,0 +1,338 @@
+[gd_scene format=3 uid="uid://l7owsactjxqr"]
+
+[ext_resource type="Script" uid="uid://8qtmt6hha33j" path="res://control.gd" id="1_v61lp"]
+[ext_resource type="Texture2D" uid="uid://domcnjdocyw6h" path="res://Images/Background/moaconnight.png" id="2_dgp6r"]
+[ext_resource type="Texture2D" uid="uid://dow56gyp65c81" path="res://Images/Object/moa.png" id="2_v61lp"]
+[ext_resource type="AudioStream" uid="uid://cnvkf1ug0dall" path="res://Music/TOMORROW_X_TOGETHER_-_CROWN_(mp3.pm).mp3" id="3_858bn"]
+[ext_resource type="Texture2D" uid="uid://c4iyiylxmn8o7" path="res://Images/icon/ring.png" id="3_jkes7"]
+[ext_resource type="AudioStream" uid="uid://cja5iccjjptqb" path="res://Music/TOMORROW_X_TOGETHER_-_Cat_Dog_(mp3.pm).mp3" id="4_2pj6v"]
+[ext_resource type="Texture2D" uid="uid://cn8psnsmcddpd" path="res://Images/icon/score.png" id="4_gqja0"]
+[ext_resource type="Texture2D" uid="uid://bo0ckxflwch66" path="res://Images/icon/l1.png" id="5_n8v1s"]
+[ext_resource type="AudioStream" uid="uid://00a5ldk7a4jy" path="res://Music/TOMORROW_X_TOGETHER_-_Good_Boy_Gone_Bad_(mp3.pm).mp3" id="5_w5605"]
+[ext_resource type="AudioStream" uid="uid://dtop7jjar1fw2" path="res://Music/TOMORROW_X_TOGETHER_TXT_-_Anti-Romantic_(mp3.pm).mp3" id="6_87wg0"]
+[ext_resource type="AudioStream" uid="uid://b1f0slsm3m8ni" path="res://Music/TOMORROW_X_TOGETHER_-_Beautiful_Strangers_(mp3.pm).mp3" id="7_3ag6a"]
+[ext_resource type="AudioStream" uid="uid://b4kh5x4j8ulgs" path="res://Music/TOMORROW_X_TOGETHER_feat._Anitta_-_Back_For_More_(mp3.pm).mp3" id="8_b3rfh"]
+[ext_resource type="AudioStream" uid="uid://cgqukpc027ftq" path="res://Music/TOMORROW_X_TOGETHER_-_I_ll_See_You_There_Tomorrow_(mp3.pm).mp3" id="9_5axgr"]
+[ext_resource type="AudioStream" uid="uid://dgc2ymgbkxyob" path="res://Music/TOMORROW_X_TOGETHER_-_9_and_Three_Quarters_Run_Away_(mp3.pm).mp3" id="10_wfgqd"]
+[ext_resource type="AudioStream" uid="uid://cecxvvyu1aa20" path="res://Music/TOMORROW_X_TOGETHER_-_0X1_LOVESONG_I_Know_I_Love_You_feat._Seori_(mp3.pm).mp3" id="11_jkes7"]
+[ext_resource type="AudioStream" uid="uid://b385r0ba3pawh" path="res://Music/TOMORROW_X_TOGETHER_-_So_What_(mp3.pm).mp3" id="12_gqja0"]
+[ext_resource type="AudioStream" uid="uid://dovkoclhys4l6" path="res://Music/TOMORROW_X_TOGETHER_-_New_Rules_(mp3.pm).mp3" id="13_n8v1s"]
+[ext_resource type="AudioStream" uid="uid://eq8ds241ifbb" path="res://Music/TOMORROW_X_TOGETHER_-_Blue_Orangeade_(mp3.pm).mp3" id="14_7bdvj"]
+[ext_resource type="AudioStream" uid="uid://smorki4lmrds" path="res://Music/TOMORROW_X_TOGETHER_-_Setsuna_Hanabi_(mp3.pm).mp3" id="15_q6xdd"]
+[ext_resource type="AudioStream" uid="uid://cpqj74c326nqj" path="res://Music/TOMORROW_X_TOGETHER_-_Sugar_Rush_Ride_(mp3.pm).mp3" id="16_lqmkq"]
+[ext_resource type="AudioStream" uid="uid://bpotm1481ohho" path="res://Music/TOMORROW_X_TOGETHER_-_Our_Summer_(mp3.pm).mp3" id="17_il8ev"]
+[ext_resource type="AudioStream" uid="uid://b1temtmuvm8hw" path="res://Music/TXT_TOMORROW_X_TOGETHER_-_No_Rules_(mp3.pm).mp3" id="18_l62jy"]
+[ext_resource type="AudioStream" uid="uid://dqsk3jx6in3iw" path="res://Music/TOMORROW_X_TOGETHER_-_Can_t_You_See_Me_(mp3.pm).mp3" id="19_8v3ii"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/soobin/soobin.tscn" id="20_3chmk"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/beomgyu/beomgyu.tscn" id="21_f5pai"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/hueningkai/hueningkai.tscn" id="22_2xhs3"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/taehyun/taehyun.tscn" id="23_olwrp"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/yeonjun/yeonjun.tscn" id="24_chp0b"]
+[ext_resource type="Script" uid="uid://d0wori7dvnbk6" path="res://menu_ui.gd" id="26_2pj6v"]
+[ext_resource type="Texture2D" uid="uid://7j4jev3gb615" path="res://Images/icon/menu.png" id="26_858bn"]
+[ext_resource type="Texture2D" uid="uid://baxrno5pye1fv" path="res://Images/icon/restart.png" id="28_87wg0"]
+[ext_resource type="Texture2D" uid="uid://ce6hnhs33it6p" path="res://Images/icon/window.png" id="28_b3rfh"]
+[ext_resource type="Texture2D" uid="uid://rxv745d8rtap" path="res://Images/icon/exit.png" id="29_3ag6a"]
+[ext_resource type="Texture2D" uid="uid://lu1e6o1k4aw8" path="res://Images/icon/resume.png" id="31_5axgr"]
+[ext_resource type="AudioStream" uid="uid://dt68ksmdngjiw" path="res://Music/effect/correct.wav" id="35_7bdvj"]
+[ext_resource type="AudioStream" uid="uid://b3d3noklbctt0" path="res://Music/effect/wrong.wav" id="36_q6xdd"]
+[ext_resource type="AudioStream" uid="uid://cmsth6h5u1nqs" path="res://Music/effect/timeout.mp3" id="37_lqmkq"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_dgp6r"]
+playback_mode = 1
+streams_count = 17
+stream_0/stream = ExtResource("3_858bn")
+stream_1/stream = ExtResource("4_2pj6v")
+stream_2/stream = ExtResource("12_gqja0")
+stream_3/stream = ExtResource("13_n8v1s")
+stream_4/stream = ExtResource("14_7bdvj")
+stream_5/stream = ExtResource("15_q6xdd")
+stream_6/stream = ExtResource("16_lqmkq")
+stream_7/stream = ExtResource("17_il8ev")
+stream_8/stream = ExtResource("18_l62jy")
+stream_9/stream = ExtResource("19_8v3ii")
+stream_10/stream = ExtResource("5_w5605")
+stream_11/stream = ExtResource("6_87wg0")
+stream_12/stream = ExtResource("7_3ag6a")
+stream_13/stream = ExtResource("8_b3rfh")
+stream_14/stream = ExtResource("9_5axgr")
+stream_15/stream = ExtResource("10_wfgqd")
+stream_16/stream = ExtResource("11_jkes7")
+
+[node name="Control" type="Control" unique_id=2115627892]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("1_v61lp")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2132730095]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_dgp6r")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="HUD" type="Control" parent="." unique_id=1934326748]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RingIcon" type="TextureRect" parent="HUD" unique_id=1589421229]
+layout_mode = 0
+offset_left = -3.0
+offset_right = 77.0
+offset_bottom = 80.0
+texture = ExtResource("3_jkes7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TimeLabel" type="Label" parent="HUD/RingIcon" unique_id=912854426]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 84.0
+offset_right = 61.0
+offset_bottom = 129.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="TextureRect2" type="TextureRect" parent="HUD" unique_id=144626518]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 17.0
+offset_right = 118.00003
+offset_bottom = 57.0
+scale = Vector2(2.9425058, 1.2122637)
+texture = ExtResource("4_gqja0")
+expand_mode = 1
+
+[node name="ScoreLabel" type="Label" parent="HUD" unique_id=1261020438]
+layout_mode = 0
+offset_left = 83.999954
+offset_top = 67.0
+offset_right = 123.999954
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.64705884, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="TextureRect" type="TextureRect" parent="HUD" unique_id=1719706368]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 4.0
+offset_right = 248.99998
+offset_bottom = 44.0
+scale = Vector2(7.268513, 2.029289)
+texture = ExtResource("5_n8v1s")
+expand_mode = 1
+
+[node name="SkillButton" type="Button" parent="HUD" unique_id=981966698]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 8.541
+anchor_right = 8.541
+offset_left = -80.640015
+offset_top = 104.0
+offset_right = 107.860016
+offset_bottom = 153.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=253395214]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 246.0
+offset_right = 2567.0
+offset_bottom = 2818.0
+scale = Vector2(0.21035889, 0.21819653)
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=868656968]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+columns = 2
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1420176723]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_v61lp")
+texture_pressed = ExtResource("2_v61lp")
+
+[node name="TextureButton2" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1591437272]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_v61lp")
+texture_pressed = ExtResource("2_v61lp")
+
+[node name="TextureButton3" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1141682770]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_v61lp")
+texture_pressed = ExtResource("2_v61lp")
+
+[node name="TextureButton4" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=978517499]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_v61lp")
+texture_pressed = ExtResource("2_v61lp")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1007468801]
+stream = SubResource("AudioStreamRandomizer_dgp6r")
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1520027592]
+root_node = NodePath("")
+
+[node name="Soobin" parent="AnimationPlayer" unique_id=1383033834 instance=ExtResource("20_3chmk")]
+position = Vector2(339, 941)
+scale = Vector2(0.39479166, 0.34609374)
+frame_progress = 0.7989187
+
+[node name="Beomgyu" parent="AnimationPlayer" unique_id=1491415730 instance=ExtResource("21_f5pai")]
+position = Vector2(224, 970)
+scale = Vector2(0.32395837, 0.29960954)
+frame_progress = 0.21848792
+
+[node name="Hueningkai" parent="AnimationPlayer" unique_id=777028925 instance=ExtResource("22_2xhs3")]
+position = Vector2(457.00006, 960)
+scale = Vector2(0.40729168, 0.37500003)
+frame_progress = 0.53408813
+
+[node name="Taehyun" parent="AnimationPlayer" unique_id=1976919220 instance=ExtResource("23_olwrp")]
+position = Vector2(110.99999, 984.00006)
+scale = Vector2(0.36979154, 0.37578124)
+frame_progress = 0.4030291
+
+[node name="Yeonjun" parent="AnimationPlayer" unique_id=1814459459 instance=ExtResource("24_chp0b")]
+position = Vector2(577, 987)
+scale = Vector2(0.39687502, 0.36484373)
+frame_progress = 0.6210668
+
+[node name="MenuLayer" type="CanvasLayer" parent="." unique_id=2082840053]
+
+[node name="MenuUi" type="Control" parent="MenuLayer" unique_id=1789259768]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -95.0
+offset_top = 25.0
+offset_right = -35.0
+offset_bottom = 85.0
+grow_horizontal = 0
+scale = Vector2(1.7566384, 1.7613279)
+mouse_filter = 2
+script = ExtResource("26_2pj6v")
+
+[node name="MenuButton" type="TextureButton" parent="MenuLayer/MenuUi" unique_id=565139396]
+layout_mode = 0
+offset_left = -7.000061
+offset_top = -7.061619
+offset_right = 1993.0
+offset_bottom = 1992.9384
+scale = Vector2(0.028001705, 0.026660202)
+texture_normal = ExtResource("26_858bn")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="PopupRoot" type="Control" parent="MenuLayer/MenuUi" unique_id=610856459]
+anchors_preset = 0
+offset_left = -351.23904
+offset_top = 170.89381
+offset_right = -311.23904
+offset_bottom = 210.89381
+scale = Vector2(3.3013897, 2.040899)
+
+[node name="Shade" type="ColorRect" parent="MenuLayer/MenuUi/PopupRoot" unique_id=273956355]
+visible = false
+layout_mode = 0
+offset_right = 119.3076
+offset_bottom = 118.638504
+color = Color(0.46666667, 1, 1, 0.6039216)
+
+[node name="CenterContainer" type="CenterContainer" parent="MenuLayer/MenuUi/PopupRoot" unique_id=1010881545]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="MenuPanel" type="PanelContainer" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer" unique_id=531293316]
+layout_mode = 2
+
+[node name="WindowImage" type="TextureRect" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel" unique_id=1121599671]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("28_b3rfh")
+expand_mode = 1
+
+[node name="MenuControl" type="Control" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel" unique_id=1212400079]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RestartButton" type="TextureButton" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel/MenuControl" unique_id=983318507]
+layout_mode = 0
+offset_left = 36.555855
+offset_top = 40.337234
+offset_right = 86.5559
+offset_bottom = 90.33725
+scale = Vector2(0.6949432, 0.92934483)
+pivot_offset = Vector2(22.262863, 26.250397)
+texture_normal = ExtResource("28_87wg0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ExitButton" type="TextureButton" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel/MenuControl" unique_id=404582487]
+layout_mode = 0
+offset_left = 82.94037
+offset_top = 44.788242
+offset_right = 132.94035
+offset_bottom = 91.25523
+scale = Vector2(0.67865026, 0.9287634)
+pivot_offset = Vector2(-19.3129, -21.698853)
+size_flags_horizontal = 4
+texture_normal = ExtResource("29_3ag6a")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ResumeButton" type="TextureButton" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel/MenuControl" unique_id=1061403729]
+layout_mode = 0
+offset_left = -0.17242825
+offset_top = 26.149658
+offset_right = 49.82758
+offset_bottom = 76.14966
+scale = Vector2(0.9611811, 1.3086683)
+pivot_offset = Vector2(56.73052, -21.42102)
+texture_normal = ExtResource("31_5axgr")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CorrectSound" type="AudioStreamPlayer" parent="." unique_id=536043608]
+stream = ExtResource("35_7bdvj")
+
+[node name="WrongSound" type="AudioStreamPlayer" parent="." unique_id=1398405034]
+stream = ExtResource("36_q6xdd")
+
+[node name="EndSound" type="AudioStreamPlayer" parent="." unique_id=103948567]
+stream = ExtResource("37_lqmkq")

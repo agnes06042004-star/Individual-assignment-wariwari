@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://btrdspbipwetc"]
+
+[ext_resource type="Script" uid="uid://dxnhl68drber2" path="res://score.gd" id="1_ceanc"]
+[ext_resource type="Texture2D" uid="uid://cyost4gbuhp6s" path="res://Images/Background/score.png" id="1_t1x8i"]
+[ext_resource type="Texture2D" uid="uid://cpy1eqqk3bggg" path="res://Images/icon/x.png" id="3_vfhx4"]
+
+[node name="Control" type="Control" unique_id=1436825018]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ceanc")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1348018519]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_t1x8i")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=1698595208]
+layout_mode = 0
+offset_left = 611.99994
+offset_top = -2.9999998
+offset_right = 1866.0
+offset_bottom = 1251.0
+scale = Vector2(0.080887645, 0.08083005)
+texture_normal = ExtResource("3_vfhx4")

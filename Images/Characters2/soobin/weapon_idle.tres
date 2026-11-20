@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://qa4sh04o0ilj"]
+
+[ext_resource type="Texture2D" uid="uid://dnireq8v8yp87" path="res://Images/Characters2/soobin/weapon_idle_sheet.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="Atlas_0"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 480, 640)
+
+[sub_resource type="AtlasTexture" id="Atlas_1"]
+atlas = ExtResource("1")
+region = Rect2(480, 0, 480, 640)
+
+[sub_resource type="AtlasTexture" id="Atlas_2"]
+atlas = ExtResource("1")
+region = Rect2(960, 0, 480, 640)
+
+[sub_resource type="AtlasTexture" id="Atlas_3"]
+atlas = ExtResource("1")
+region = Rect2(0, 640, 480, 640)
+
+[sub_resource type="AtlasTexture" id="Atlas_4"]
+atlas = ExtResource("1")
+region = Rect2(480, 640, 480, 640)
+
+[sub_resource type="AtlasTexture" id="Atlas_5"]
+atlas = ExtResource("1")
+region = Rect2(960, 640, 480, 640)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.7,
+"texture": SubResource("Atlas_0")
+}, {
+"duration": 1.5,
+"texture": SubResource("Atlas_1")
+}, {
+"duration": 2.2,
+"texture": SubResource("Atlas_2")
+}, {
+"duration": 1.4,
+"texture": SubResource("Atlas_3")
+}, {
+"duration": 1.8,
+"texture": SubResource("Atlas_4")
+}, {
+"duration": 1.4,
+"texture": SubResource("Atlas_5")
+}],
+"loop": 1,
+"name": &"weapon_idle",
+"speed": 10.0
+}]
