@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://b7bxgx3856h5n"]
+
+[ext_resource type="Script" uid="uid://dfq4kr63kvsy2" path="res://Character.gd" id="1_yxww1"]
+[ext_resource type="Texture2D" uid="uid://c64rjrx7grm34" path="res://Images/Background/5140f290-8caf-4faf-bf96-c6d21d5a4b9a.png" id="2_yxww1"]
+[ext_resource type="PackedScene" path="res://Images/Characters2/yeonjun/yeonjun.tscn" id="3_qi5as"]
+[ext_resource type="PackedScene" path="res://Images/Characters2/soobin/soobin.tscn" id="4_jb3kq"]
+[ext_resource type="PackedScene" path="res://Images/Characters2/beomgyu/beomgyu.tscn" id="5_c1b4b"]
+[ext_resource type="PackedScene" path="res://Images/Characters2/taehyun/taehyun.tscn" id="6_7tnxx"]
+[ext_resource type="PackedScene" path="res://Images/Characters2/hueningkai/hueningkai.tscn" id="7_bwfjh"]
+
+[node name="Control" type="Control" unique_id=148225137]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yxww1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1700176504]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(6.0159407, 0.638564)
+
+[node name="Portrait" type="TextureRect" parent="VBoxContainer" unique_id=188484609]
+custom_minimum_size = Vector2(120, 2000)
+layout_mode = 2
+texture = ExtResource("2_yxww1")
+expand_mode = 1
+
+[node name="CharacterHolder" type="Node2D" parent="VBoxContainer/Portrait" unique_id=729828294]
+scale = Vector2(-0.14570896, 1.3338108)
+
+[node name="CHOIYONGMEONG" parent="VBoxContainer/Portrait/CharacterHolder" unique_id=2019428656 instance=ExtResource("4_jb3kq")]
+position = Vector2(-223.59714, 823.0371)
+scale = Vector2(0.8030822, 0.822669)
+frame_progress = 0.5861977
+
+[node name="BAMGEUT" parent="VBoxContainer/Portrait/CharacterHolder" unique_id=1030304982 instance=ExtResource("5_c1b4b")]
+visible = false
+position = Vector2(-223.59715, 857.0856)
+scale = Vector2(0.7636986, 0.71120393)
+frame_progress = 0.3829174
+
+[node name="DA-GO-NYANG" parent="VBoxContainer/Portrait/CharacterHolder" unique_id=169096920 instance=ExtResource("6_7tnxx")]
+visible = false
+position = Vector2(-229.19333, 839.36206)
+scale = Vector2(0.717751, 0.7618701)
+frame_progress = 0.7834908
+
+[node name="HHMNYARING" parent="VBoxContainer/Portrait/CharacterHolder" unique_id=2080751211 instance=ExtResource("7_bwfjh")]
+visible = false
+position = Vector2(-208.76672, 838.3002)
+scale = Vector2(0.80308217, 0.7010708)
+
+[node name="HWANG CHOON" parent="VBoxContainer/Portrait/CharacterHolder" unique_id=306965838 instance=ExtResource("3_qi5as")]
+position = Vector2(-216.75233, 835.952)
+scale = Vector2(0.6597208, 0.7145041)
+frame_progress = 0.92709804
+
+[node name="LevelLabel" type="Label" parent="." unique_id=1191734233]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 824.0
+offset_right = 459.0
+offset_bottom = 866.0
+
+[node name="SkillLabel" type="Label" parent="." unique_id=1354710407]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 349.0
+offset_right = 664.0
+offset_bottom = 571.0
+
+[node name="ExpLabel" type="Label" parent="." unique_id=882499976]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 673.0
+offset_right = 657.0
+offset_bottom = 713.0
+
+[node name="NameLabel" type="Label" parent="." unique_id=97205702]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 194.0
+offset_right = 662.0
+offset_bottom = 236.0
+
+[node name="SelectButton" type="Button" parent="." unique_id=1757018087]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 893.0
+offset_right = 618.0
+offset_bottom = 957.3529
+text = "Select"
+
+[node name="BackButton" type="Button" parent="." unique_id=2107166983]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 28.0
+offset_right = 179.0
+offset_bottom = 88.0
+text = "Back"
+
+[node name="PreviousButton" type="Button" parent="." unique_id=1668492320]
+layout_mode = 0
+offset_left = 42.00003
+offset_top = 1073.0001
+offset_right = 117.00003
+offset_bottom = 1104.0001
+scale = Vector2(1.7936369, 2.0293586)
+theme_override_font_sizes/font_size = 16
+text = "Previous"
+
+[node name="NextButton" type="Button" parent="." unique_id=1509335928]
+layout_mode = 0
+offset_left = 555.0
+offset_top = 1069.0
+offset_right = 684.0
+offset_bottom = 1131.0
+theme_override_font_sizes/font_size = 24
+text = "Next"

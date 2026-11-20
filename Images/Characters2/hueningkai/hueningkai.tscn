@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpriteFrames" path="weapon_idle.tres" id="1"]
+
+[node name="Hueningkai" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1")
+animation = &"weapon_idle"
+autoplay = "weapon_idle"

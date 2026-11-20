@@ -1,0 +1,503 @@
+[gd_scene format=3 uid="uid://2ulh68v7h30y"]
+
+[ext_resource type="Script" uid="uid://dikk6hu6pth0e" path="res://control_4.gd" id="1_gjtbf"]
+[ext_resource type="Texture2D" uid="uid://domcnjdocyw6h" path="res://Images/Background/moaconnight.png" id="1_kcfca"]
+[ext_resource type="Texture2D" uid="uid://c4iyiylxmn8o7" path="res://Images/icon/ring.png" id="2_gjtbf"]
+[ext_resource type="Texture2D" uid="uid://cn8psnsmcddpd" path="res://Images/icon/score.png" id="3_q1fkp"]
+[ext_resource type="Texture2D" uid="uid://mkdbjtst0wiv" path="res://Images/icon/l4.png" id="4_7qepq"]
+[ext_resource type="Texture2D" uid="uid://dow56gyp65c81" path="res://Images/Object/moa.png" id="5_sokmk"]
+[ext_resource type="AudioStream" uid="uid://cnvkf1ug0dall" path="res://Music/TOMORROW_X_TOGETHER_-_CROWN_(mp3.pm).mp3" id="6_1x0db"]
+[ext_resource type="AudioStream" uid="uid://cja5iccjjptqb" path="res://Music/TOMORROW_X_TOGETHER_-_Cat_Dog_(mp3.pm).mp3" id="7_bmyoa"]
+[ext_resource type="AudioStream" uid="uid://00a5ldk7a4jy" path="res://Music/TOMORROW_X_TOGETHER_-_Good_Boy_Gone_Bad_(mp3.pm).mp3" id="8_hwww4"]
+[ext_resource type="AudioStream" uid="uid://dtop7jjar1fw2" path="res://Music/TOMORROW_X_TOGETHER_TXT_-_Anti-Romantic_(mp3.pm).mp3" id="9_nefqs"]
+[ext_resource type="AudioStream" uid="uid://b1f0slsm3m8ni" path="res://Music/TOMORROW_X_TOGETHER_-_Beautiful_Strangers_(mp3.pm).mp3" id="10_r4ta3"]
+[ext_resource type="AudioStream" uid="uid://b4kh5x4j8ulgs" path="res://Music/TOMORROW_X_TOGETHER_feat._Anitta_-_Back_For_More_(mp3.pm).mp3" id="11_yd23p"]
+[ext_resource type="AudioStream" uid="uid://cgqukpc027ftq" path="res://Music/TOMORROW_X_TOGETHER_-_I_ll_See_You_There_Tomorrow_(mp3.pm).mp3" id="12_4j24r"]
+[ext_resource type="AudioStream" uid="uid://dgc2ymgbkxyob" path="res://Music/TOMORROW_X_TOGETHER_-_9_and_Three_Quarters_Run_Away_(mp3.pm).mp3" id="13_yydek"]
+[ext_resource type="AudioStream" uid="uid://cecxvvyu1aa20" path="res://Music/TOMORROW_X_TOGETHER_-_0X1_LOVESONG_I_Know_I_Love_You_feat._Seori_(mp3.pm).mp3" id="14_tsq14"]
+[ext_resource type="AudioStream" uid="uid://b385r0ba3pawh" path="res://Music/TOMORROW_X_TOGETHER_-_So_What_(mp3.pm).mp3" id="15_1tv24"]
+[ext_resource type="AudioStream" uid="uid://dovkoclhys4l6" path="res://Music/TOMORROW_X_TOGETHER_-_New_Rules_(mp3.pm).mp3" id="16_07lhc"]
+[ext_resource type="AudioStream" uid="uid://eq8ds241ifbb" path="res://Music/TOMORROW_X_TOGETHER_-_Blue_Orangeade_(mp3.pm).mp3" id="17_soxs0"]
+[ext_resource type="AudioStream" uid="uid://smorki4lmrds" path="res://Music/TOMORROW_X_TOGETHER_-_Setsuna_Hanabi_(mp3.pm).mp3" id="18_fls20"]
+[ext_resource type="AudioStream" uid="uid://cpqj74c326nqj" path="res://Music/TOMORROW_X_TOGETHER_-_Sugar_Rush_Ride_(mp3.pm).mp3" id="19_nx78u"]
+[ext_resource type="AudioStream" uid="uid://bpotm1481ohho" path="res://Music/TOMORROW_X_TOGETHER_-_Our_Summer_(mp3.pm).mp3" id="20_347vj"]
+[ext_resource type="AudioStream" uid="uid://b1temtmuvm8hw" path="res://Music/TXT_TOMORROW_X_TOGETHER_-_No_Rules_(mp3.pm).mp3" id="21_f4lhb"]
+[ext_resource type="AudioStream" uid="uid://dqsk3jx6in3iw" path="res://Music/TOMORROW_X_TOGETHER_-_Can_t_You_See_Me_(mp3.pm).mp3" id="22_nihni"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/soobin/soobin.tscn" id="23_wcytk"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/beomgyu/beomgyu.tscn" id="24_w6mok"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/hueningkai/hueningkai.tscn" id="25_lwd8g"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/taehyun/taehyun.tscn" id="26_h4hdh"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/yeonjun/yeonjun.tscn" id="27_b6o6q"]
+[ext_resource type="Script" uid="uid://d0wori7dvnbk6" path="res://menu_ui.gd" id="28_8t84e"]
+[ext_resource type="Texture2D" uid="uid://7j4jev3gb615" path="res://Images/icon/menu.png" id="29_cdeno"]
+[ext_resource type="Texture2D" uid="uid://ce6hnhs33it6p" path="res://Images/icon/window.png" id="30_bxsil"]
+[ext_resource type="Texture2D" uid="uid://baxrno5pye1fv" path="res://Images/icon/restart.png" id="31_spngq"]
+[ext_resource type="Texture2D" uid="uid://rxv745d8rtap" path="res://Images/icon/exit.png" id="32_jp5hp"]
+[ext_resource type="Texture2D" uid="uid://lu1e6o1k4aw8" path="res://Images/icon/resume.png" id="33_8anfq"]
+[ext_resource type="AudioStream" uid="uid://dt68ksmdngjiw" path="res://Music/effect/correct.wav" id="34_r84dl"]
+[ext_resource type="AudioStream" uid="uid://b3d3noklbctt0" path="res://Music/effect/wrong.wav" id="35_3hm7d"]
+[ext_resource type="AudioStream" uid="uid://cmsth6h5u1nqs" path="res://Music/effect/timeout.mp3" id="36_0lyop"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_g45e3"]
+playback_mode = 1
+streams_count = 17
+stream_0/stream = ExtResource("6_1x0db")
+stream_1/stream = ExtResource("7_bmyoa")
+stream_2/stream = ExtResource("15_1tv24")
+stream_3/stream = ExtResource("16_07lhc")
+stream_4/stream = ExtResource("17_soxs0")
+stream_5/stream = ExtResource("18_fls20")
+stream_6/stream = ExtResource("19_nx78u")
+stream_7/stream = ExtResource("20_347vj")
+stream_8/stream = ExtResource("21_f4lhb")
+stream_9/stream = ExtResource("22_nihni")
+stream_10/stream = ExtResource("8_hwww4")
+stream_11/stream = ExtResource("9_nefqs")
+stream_12/stream = ExtResource("10_r4ta3")
+stream_13/stream = ExtResource("11_yd23p")
+stream_14/stream = ExtResource("12_4j24r")
+stream_15/stream = ExtResource("13_yydek")
+stream_16/stream = ExtResource("14_tsq14")
+
+[node name="Control" type="Control" unique_id=1082478990]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gjtbf")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1470885337]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_kcfca")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="HUD" type="Control" parent="." unique_id=1607288433]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RingIcon" type="TextureRect" parent="HUD" unique_id=755734762]
+layout_mode = 0
+offset_left = -3.0
+offset_right = 77.0
+offset_bottom = 80.0
+texture = ExtResource("2_gjtbf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TimeLabel" type="Label" parent="HUD/RingIcon" unique_id=606876580]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 84.0
+offset_right = 61.0
+offset_bottom = 129.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="TextureRect2" type="TextureRect" parent="HUD" unique_id=445306455]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 17.0
+offset_right = 118.00003
+offset_bottom = 57.0
+scale = Vector2(2.9425058, 1.2122637)
+texture = ExtResource("3_q1fkp")
+expand_mode = 1
+
+[node name="ScoreLabel" type="Label" parent="HUD" unique_id=100289388]
+layout_mode = 0
+offset_left = 83.999954
+offset_top = 67.0
+offset_right = 123.999954
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.64705884, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="SkillButton" type="Button" parent="HUD" unique_id=1067430010]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 8.541
+anchor_right = 8.541
+offset_left = -80.640015
+offset_top = 104.0
+offset_right = 107.860016
+offset_bottom = 153.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="HUD" unique_id=48623055]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 4.0
+offset_right = 248.99998
+offset_bottom = 44.0
+scale = Vector2(7.268513, 2.029289)
+texture = ExtResource("4_7qepq")
+expand_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=763849130]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 211.00002
+offset_right = 4954.0
+offset_bottom = 5359.0
+scale = Vector2(0.1023064, 0.09947849)
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=1938979683]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+columns = 5
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=118325130]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton2" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1977087278]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton3" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=737377824]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton4" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1913040870]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton5" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=690396618]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton6" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=634638338]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton7" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=548461421]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton8" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=166553365]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton9" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1100042404]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton10" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1128210386]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton11" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=252262570]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton12" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=130887890]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton13" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=818450425]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton14" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1458365632]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton15" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=551893866]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton16" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1759715011]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton17" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=2090731046]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton18" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=889724537]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton19" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=328086991]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton20" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1676204693]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton21" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=628442197]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton22" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=721624147]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton23" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=265066380]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton24" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1368301805]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="TextureButton25" type="TextureButton" parent="CenterContainer/GridContainer" unique_id=1010939996]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_sokmk")
+texture_pressed = ExtResource("5_sokmk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1335619009]
+stream = SubResource("AudioStreamRandomizer_g45e3")
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=545764020]
+root_node = NodePath("")
+
+[node name="Soobin" parent="AnimationPlayer" unique_id=711972563 instance=ExtResource("23_wcytk")]
+position = Vector2(339, 941)
+scale = Vector2(0.39479166, 0.34609374)
+frame_progress = 0.7989187
+
+[node name="Beomgyu" parent="AnimationPlayer" unique_id=543903120 instance=ExtResource("24_w6mok")]
+position = Vector2(224, 970)
+scale = Vector2(0.32395837, 0.29960954)
+frame_progress = 0.21848792
+
+[node name="Hueningkai" parent="AnimationPlayer" unique_id=148699838 instance=ExtResource("25_lwd8g")]
+position = Vector2(457.00006, 960)
+scale = Vector2(0.40729168, 0.37500003)
+frame_progress = 0.53408813
+
+[node name="Taehyun" parent="AnimationPlayer" unique_id=703920099 instance=ExtResource("26_h4hdh")]
+position = Vector2(110.99999, 984.00006)
+scale = Vector2(0.36979154, 0.37578124)
+frame_progress = 0.4030291
+
+[node name="Yeonjun" parent="AnimationPlayer" unique_id=84000028 instance=ExtResource("27_b6o6q")]
+position = Vector2(577, 987)
+scale = Vector2(0.39687502, 0.36484373)
+frame_progress = 0.6210668
+
+[node name="MenuLayer" type="CanvasLayer" parent="." unique_id=1568367320]
+
+[node name="MenuUi" type="Control" parent="MenuLayer" unique_id=2008261214]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -95.0
+offset_top = 25.0
+offset_right = -35.0
+offset_bottom = 85.0
+grow_horizontal = 0
+scale = Vector2(1.7566384, 1.7613279)
+mouse_filter = 2
+script = ExtResource("28_8t84e")
+
+[node name="MenuButton" type="TextureButton" parent="MenuLayer/MenuUi" unique_id=1918498130]
+layout_mode = 0
+offset_left = -7.000061
+offset_top = -7.061619
+offset_right = 1993.0
+offset_bottom = 1992.9384
+scale = Vector2(0.028001705, 0.026660202)
+texture_normal = ExtResource("29_cdeno")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="PopupRoot" type="Control" parent="MenuLayer/MenuUi" unique_id=1060599294]
+anchors_preset = 0
+offset_left = -351.23904
+offset_top = 170.89381
+offset_right = -311.23904
+offset_bottom = 210.89381
+scale = Vector2(3.3013897, 2.040899)
+
+[node name="Shade" type="ColorRect" parent="MenuLayer/MenuUi/PopupRoot" unique_id=1722512154]
+visible = false
+layout_mode = 0
+offset_right = 119.3076
+offset_bottom = 118.638504
+color = Color(0.46666667, 1, 1, 0.6039216)
+
+[node name="CenterContainer" type="CenterContainer" parent="MenuLayer/MenuUi/PopupRoot" unique_id=2049015519]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="MenuPanel" type="PanelContainer" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer" unique_id=1036913312]
+layout_mode = 2
+
+[node name="WindowImage" type="TextureRect" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel" unique_id=1808607818]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("30_bxsil")
+expand_mode = 1
+
+[node name="MenuControl" type="Control" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel" unique_id=1346785310]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RestartButton" type="TextureButton" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel/MenuControl" unique_id=239340927]
+layout_mode = 0
+offset_left = 36.555855
+offset_top = 40.337234
+offset_right = 86.5559
+offset_bottom = 90.33725
+scale = Vector2(0.6949432, 0.92934483)
+pivot_offset = Vector2(22.262863, 26.250397)
+texture_normal = ExtResource("31_spngq")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ExitButton" type="TextureButton" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel/MenuControl" unique_id=922544427]
+layout_mode = 0
+offset_left = 82.94037
+offset_top = 44.788242
+offset_right = 132.94035
+offset_bottom = 91.25523
+scale = Vector2(0.67865026, 0.9287634)
+pivot_offset = Vector2(-19.3129, -21.698853)
+size_flags_horizontal = 4
+texture_normal = ExtResource("32_jp5hp")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ResumeButton" type="TextureButton" parent="MenuLayer/MenuUi/PopupRoot/CenterContainer/MenuPanel/MenuControl" unique_id=1110250086]
+layout_mode = 0
+offset_left = -0.17242825
+offset_top = 26.149658
+offset_right = 49.82758
+offset_bottom = 76.14966
+scale = Vector2(0.9611811, 1.3086683)
+pivot_offset = Vector2(56.73052, -21.42102)
+texture_normal = ExtResource("33_8anfq")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CorrectSound" type="AudioStreamPlayer" parent="." unique_id=440039640]
+stream = ExtResource("34_r84dl")
+
+[node name="WrongSound" type="AudioStreamPlayer" parent="." unique_id=836968280]
+stream = ExtResource("35_3hm7d")
+
+[node name="EndSound" type="AudioStreamPlayer" parent="." unique_id=1592689287]
+stream = ExtResource("36_0lyop")

@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://cy6oqon8brbpt"]
+
+[ext_resource type="Texture2D" uid="uid://cftlt4hqksl4l" path="res://Images/Background/background.png" id="1_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://cv5ev2v2amufr" path="res://Images/Background/title.png" id="2_jix8l"]
+[ext_resource type="AudioStream" uid="uid://dnlci1th1hq5g" path="res://Music/TXT_Tomorrow_X_Together_-_MOA_Diary_Dubaddu_Wari_Wari_(mp3.pm).mp3" id="3_glbon"]
+[ext_resource type="Script" uid="uid://djx3f5kd0ah58" path="res://main_menu.gd" id="4_menu"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/soobin/soobin.tscn" id="5_dy7ct"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/beomgyu/beomgyu.tscn" id="6_0o4t1"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/hueningkai/hueningkai.tscn" id="7_0k4wn"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/taehyun/taehyun.tscn" id="8_j5v2v"]
+[ext_resource type="PackedScene" path="res://Images/Characters/animation/yeonjun/yeonjun.tscn" id="9_iotk1"]
+
+[node name="Main_menu" type="Control" unique_id=1278076129]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_menu")
+
+[node name="Background" type="TextureRect" parent="." unique_id=941474464]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_fu7sn")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=176005780]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.38
+anchor_right = 0.95
+anchor_bottom = 0.84
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1307143648]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="Start" type="Button" parent="CenterContainer/VBoxContainer" unique_id=762431616]
+custom_minimum_size = Vector2(360, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Play Game"
+
+[node name="Characters" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2146658923]
+custom_minimum_size = Vector2(360, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Characters"
+
+[node name="EXIT" type="Button" parent="CenterContainer/VBoxContainer" unique_id=301529312]
+custom_minimum_size = Vector2(360, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "EXIT"
+
+[node name="Title" type="TextureRect" parent="." unique_id=480235947]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.04
+anchor_top = 0.07
+anchor_right = 0.96
+anchor_bottom = 0.27
+mouse_filter = 2
+texture = ExtResource("2_jix8l")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=579863729]
+stream = ExtResource("3_glbon")
+autoplay = true
+
+[node name="Notice" type="AcceptDialog" parent="." unique_id=751800509]
+title = "WARI WARI"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=698560390]
+root_node = NodePath("")
+
+[node name="Soobin" parent="AnimationPlayer" unique_id=1417865502 instance=ExtResource("5_dy7ct")]
+position = Vector2(351.00003, 1093)
+scale = Vector2(0.39479166, 0.34609374)
+frame_progress = 0.7989187
+
+[node name="Beomgyu" parent="AnimationPlayer" unique_id=124034246 instance=ExtResource("6_0o4t1")]
+position = Vector2(217, 1122)
+scale = Vector2(0.32395837, 0.29960954)
+frame_progress = 0.21848792
+
+[node name="Hueningkai" parent="AnimationPlayer" unique_id=1739162039 instance=ExtResource("7_0k4wn")]
+position = Vector2(489, 1101)
+scale = Vector2(0.40729168, 0.37500003)
+frame_progress = 0.53408813
+
+[node name="Taehyun" parent="AnimationPlayer" unique_id=1376467671 instance=ExtResource("8_j5v2v")]
+position = Vector2(85.99999, 1136)
+scale = Vector2(0.36979154, 0.37578124)
+frame_progress = 0.4030291
+
+[node name="Yeonjun" parent="AnimationPlayer" unique_id=746057293 instance=ExtResource("9_iotk1")]
+position = Vector2(626.00006, 1140.0001)
+scale = Vector2(0.39687502, 0.36484373)
+frame_progress = 0.6210668
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Characters" to="." method="_on_characters_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/EXIT" to="." method="_on_exit_pressed"]
